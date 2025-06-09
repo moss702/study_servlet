@@ -29,7 +29,7 @@ public class SignupServlet extends HttpServlet{
 		Member member = Member.builder().id(id).pw(pw).name(name).build();
 		new MemberService().register(member);
 		
-		resp.sendRedirect("signup");
+		resp.sendRedirect("signin");
 		
 	}
 	
