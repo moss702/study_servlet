@@ -4,10 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<%@ include file="common/head.jsp" %>
 </head>
 <body>
+<%@ include file="common/header.jsp" %>
+<%@ include file="common/nav.jsp" %>
+<main>
 	<h1>index</h1>
 	<c:if test="${empty member}">
 		<a href="member/register">회원가입</a>
@@ -17,5 +19,7 @@
 		<span>${member.name} 님 환영합니다.</span>
 		<a href="member/logout">로그아웃</a>
 	</c:if>
+</main>
+<%@ include file="common/footer.jsp" %>
 </body>
 </html>
