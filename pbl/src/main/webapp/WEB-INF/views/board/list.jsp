@@ -13,17 +13,18 @@
     <div class="container p-0">
         <main>
             <div class="clearfix py-0">
-                <a href="board_write.html" class="btn btn-secondary btn-sm float-end"><i class="fa-solid fa-pen"></i> 글쓰기</a>
+                <a href="write" class="btn btn-secondary btn-sm float-end"><i class="fa-solid fa-pen"></i> 글쓰기</a>
             </div>
             <div class="list-group">
-            <div class="list-group-item">
-                <div class="row text-center align-items-center small text-muted">
-                    <div class="col-1 small">글번호</div>
-                    <div class="col-1 small">카테고리</div>
-                    <div class="col text-start small">제목</div>
-                    <div class="col-1 small">날짜</div>
-                    <div class="col-1 small">조회수</div>
-                </div>
+	            <div class="list-group-item">
+	                <div class="row text-center align-items-center small text-muted">
+	                    <div class="col-1 small">글번호</div>
+	                    <div class="col-1 small">카테고리</div>
+	                    <div class="col text-start small">제목</div>
+	                    <div class="col-1 small">날짜</div>
+	                    <div class="col-1 small">조회수</div>
+	                </div>
+	            </div>
             </div>
            <c:forEach items="${boards}" var="board">
             <a href="view?bno=${board.bno}" class="list-group-item list-group-item-action list-group-item-secondary">

@@ -1,6 +1,7 @@
 package controller.member;
 
 import java.io.IOException;
+import java.net.URLDecoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -40,7 +41,16 @@ public class Login extends HttpServlet {
 			HttpSession session = req.getSession();
 			session.setMaxInactiveInterval(60 * 10); //세션 유지기간 *10분
 			session.setAttribute("member", new MemberService().findById(id));
-			resp.sendRedirect(req.getContextPath() + "/index"); //contextPath >> /pbl
+			
+			
+			//로그인 성공했을때 보낼곳
+			String url = req.getParameter("url");
+			if(url == null) {
+				resp.sendRedirect(req.getContextPath() + "/index"); //contextPath >> /pbl
+			} else {
+				resp.sendRedirect(URLDecoder.decode(url, "utf-8"));
+				//쿼리스트링에 한글 포함될수도있으니까 차셋 및 디코딩
+			}
 			
 		} else {
 			resp.sendRedirect("login?msg=fail");

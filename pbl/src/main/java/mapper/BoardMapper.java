@@ -11,6 +11,8 @@ public interface BoardMapper {
 	List<Board> findBy(long bno);
 
 	Board selectOne(long bno);
+
+	void insert(Board board);
 	
 	
 	
