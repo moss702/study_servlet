@@ -25,16 +25,15 @@
             <div class="p-0 py-2 bg-light small border-top border-2 border-muted">
                 <span class="px-2">${board.id}</span>
                 <a href="#" class="text-muted small">board.html</a>
-                <span class="float-end text-muted small me-3">
-                	<fmt:parseDate value= "${board.regdate}" pattern="yyyy-MM-dd HH:mm:ss" var="parseDate" />
-	                <fmt:formatDate value="${parseDate}" pattern="yy.MM.dd" />
-				</span>
+                <span class="float-end text-muted small me-3">${board.regdate}</span>
             </div>
             <div class="small p-0 py-5 ps-1 border-bottom border-1 border-muted">
                ${board.content}
             </div>
             <div class="ps-0 pe-0">
-                <a href="list" class="btn btn-secondary btn-sm"><i class="fa-solid fa-list-ul"></i> 목록</a>
+                <a href="list?${cri.qs2}" class="btn btn-secondary btn-sm"><i class="fa-solid fa-list-ul"></i> 목록</a>
+                <a href="modify?bno=${board.bno}&${cri.qs2}" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i> 수정</a>
+                <a href="remove?bno=${board.bno}&${cri.qs2}" class="btn btn-danger btn-sm"  onclick="return confirm('삭제하시겠습니까?')"><i class="fa-regular fa-trash-can"></i> 삭제</a>
                 <div class="float-end">
                     <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-share-nodes"></i> 공유</button>
                     <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-clipboard"></i> 스크랩</button>

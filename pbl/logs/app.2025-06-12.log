@@ -1,0 +1,117 @@
+11:19:17.604 [main] INFO  sqltiming - select * from tbl_member where id = 'sae'
+ {executed in 9 msec}
+11:19:17.625 [main] INFO  resultsettable - 
+|---|----|-----|-----|------|--------------------|
+|no |id  |pw   |name |email |regdate             |
+|---|----|-----|-----|------|--------------------|
+|1  |sae |1234 |null |null  |2025-06-11 18:05:58 |
+|---|----|-----|-----|------|--------------------|
+
+11:19:17.644 [main] INFO  MemberService - Member(no=1, id=sae, pw=1234, name=null, email=null, regdate=2025-06-11 18:05:58)
+11:52:57.737 [main] INFO  sqltiming - insert into tbl_member(id, pw, name, email) values ('sae0', '$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq', '새똥이', NULL)
+ {executed in 7 msec}
+12:04:56.826 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 9 msec}
+12:04:56.858 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:05:37.060 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 7 msec}
+12:05:37.083 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:05:37.109 [main] INFO  MemberService - false
+12:11:49.248 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 7 msec}
+12:11:49.272 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:11:49.400 [main] INFO  MemberService - false
+12:14:51.833 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 7 msec}
+12:14:51.858 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:14:52.093 [main] INFO  MemberService - true
+12:16:30.759 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 8 msec}
+12:16:30.782 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:16:31.026 [main] INFO  MemberService - true
+12:16:31.033 [main] INFO  sqltiming - select * from tbl_member where id = 'sae'
+ {executed in 5 msec}
+12:16:31.037 [main] INFO  resultsettable - 
+|---|---|---|-----|------|--------|
+|no |id |pw |name |email |regdate |
+|---|---|---|-----|------|--------|
+|---|---|---|-----|------|--------|
+
+12:16:31.037 [main] INFO  MemberService - false
+12:16:41.036 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 8 msec}
+12:16:41.064 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:16:41.321 [main] INFO  MemberService - true
+12:16:41.329 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 6 msec}
+12:16:41.333 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:16:41.424 [main] INFO  MemberService - false
+12:16:58.099 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 8 msec}
+12:16:58.124 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:16:58.374 [main] INFO  MemberService - true
+12:16:58.381 [main] INFO  sqltiming - select * from tbl_member where id = 'sae0'
+ {executed in 5 msec}
+12:16:58.385 [main] INFO  resultsettable - 
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|no |id   |pw                                                           |name |email |regdate             |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+|6  |sae0 |$2a$10$ADqx3kY5lPMiVW7nZf7jEOWLhq7wGFVcpYEopHaC5pSYkrK80KGMq |새똥이  |null  |2025-06-12 11:52:54 |
+|---|-----|-------------------------------------------------------------|-----|------|--------------------|
+
+12:16:58.472 [main] ERROR MemberService - false
+20:14:20.334 [main] INFO  LogTest - 인포 로그
+20:14:20.335 [main] WARN  LogTest - 워닝 로그
+20:14:20.336 [main] ERROR LogTest - 에러 로그
+20:30:26.219 [main] DEBUG LogTest - 디버그 로그
+20:30:26.220 [main] INFO  LogTest - 인포 로그
+20:30:26.221 [main] WARN  LogTest - 워닝 로그
+20:30:26.222 [main] ERROR LogTest - 에러 로그
