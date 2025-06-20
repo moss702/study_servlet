@@ -87,6 +87,7 @@
                 </c:forEach>
                 <div>
             </div>
+<%--             ${pageDto} --%>
             <ul class="pagination justify-content-center pt-4">
             	<c:if test="${pageDto.doubleLeft}">
   					<li class="page-item"><a class="page-link" href="list?page=1&${pageDto.cri.qs}"><i class="fa-solid fa-angles-left"></i></a></li>
@@ -101,11 +102,11 @@
   				</c:forEach>
   				
   				<c:if test="${pageDto.right}">
-  					<li class="page-item"><a class="page-link" href="list?${pageDto.end+1}&${pageDto.cri.qs}"><i class="fa-solid fa-angle-right"></i></a></li>
+  					<li class="page-item"><a class="page-link" href="list?page=${pageDto.end+1}&${pageDto.cri.qs}"><i class="fa-solid fa-angle-right"></i></a></li>
   				</c:if>
   				
   				<c:if test="${pageDto.doubleRight}">
-  					<li class="page-item"><a class="page-link" href="list?${pageDto.realEnd}&${pageDto.cri.qs}"><i class="fa-solid fa-angles-right"></i></a></li>
+  					<li class="page-item"><a class="page-link" href="list?page=${pageDto.realEnd}&${pageDto.cri.qs}"><i class="fa-solid fa-angles-right"></i></a></li>
   				</c:if>
 			</ul>
         </main>

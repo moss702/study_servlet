@@ -24,7 +24,7 @@ public class BoardList extends HttpServlet{
 		Criteria cri = Criteria.init(req);
 		log.info("{}", cri);
 		
-		req.setAttribute("", new PageDto(cri, service.getCount(cri)));
+		req.setAttribute("pageDto", new PageDto(cri, service.getCount(cri)));
 		req.setAttribute("boards", service.list(cri));
 		req.getRequestDispatcher("/WEB-INF/views/board/list.jsp").forward(req, resp);
 		

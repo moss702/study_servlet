@@ -1,4 +1,4 @@
-package review_api;
+package controller.reply;
 
 import java.io.IOException;
 import java.util.Map;
@@ -12,12 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 
 import domain.Member;
-import service.ReviewService;
+import domain.Reply;
+import lombok.extern.slf4j.Slf4j;
+import service.ReplyService;
 
-@WebServlet("/review/*")
-public class ReviewServlet extends HttpServlet{
-	
-	private static final String ID = "/review/";
+@WebServlet("/reply/*")
+@Slf4j
+public class ReplyServlet extends HttpServlet{
+	private static final String ID = "/reply/";
 	
 	private String getURI(HttpServletRequest req) {
 		String uri = req.getRequestURI();
@@ -27,24 +29,30 @@ public class ReviewServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("health check");
-
-//		System.out.println(req.getContextPath());
-//		System.out.println(req.getRequestURI());
-		
 		String uri = getURI(req);
-		
-		ReviewService service = new ReviewService();
+		ReplyService service = new ReplyService();
 		Gson gson = new Gson();
 		String ret = "";
-
 		if(uri.startsWith("list") || uri.equals("*")) { // review/list/1 목록조회
-			ret = gson.toJson(service.list());
+			log.info("{}", uri);
+			String tmp = "list/";
+			if(uri.contains(tmp)) {
+				String[] tmps = uri.split("/");
+				Long bno = null;
+				
+				if(tmps.length > 1) {
+					Long lastRno = null;
+					bno = Long.valueOf(tmps[1]);
+					if (tmps.length > 2) {
+						lastRno = Long.valueOf(tmps[2]);						
+					}
+					ret = gson.toJson(service.list(bno, lastRno));
+				}
+			}
 		} 
 		else { // review/1 단일조회
 			ret = gson.toJson(service.findBy(Long.parseLong(uri))); //uri의 숫자를 long타입으로 바꿔준다.
 		} 
-		System.out.println(ret);
 		resp.setContentType("application/json; charset=utf-8");
 		resp.getWriter().print(ret);
 	}
@@ -54,42 +62,32 @@ public class ReviewServlet extends HttpServlet{
 		String uri = getURI(req);
 		Long rno = Long.valueOf(uri);
 		
-		boolean result = new ReviewService().remove(rno) > 0;
+		new ReplyService().remove(rno);
 		
 		resp.setContentType("application/json; charset=utf-8");
-		resp.getWriter().print(new Gson().toJson(Map.of("result", result)));
+		resp.getWriter().print(new Gson().toJson(Map.of("result", true)));
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//insert
-		System.out.println("받음");
-		req.setCharacterEncoding("utf-8"); 
 		String ret = String.join("", req.getReader().lines().toList());		
-		Member review = new Gson().fromJson(ret, Member.class);
-		new ReviewService().register(review);
+		Reply reply = new Gson().fromJson(ret, Reply.class);
+		new ReplyService().register(reply);
 		
 		resp.setContentType("application/json; charset=utf-8");
 		resp.getWriter().print(new Gson().toJson(Map.of("result",true)));
 	}
 
 	@Override
-	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String uri = getURI(req);
-		Long rno = Long.valueOf(uri);
-		
-		req.setCharacterEncoding("utf-8"); 
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {		
 		String ret = String.join("", req.getReader().lines().toList());		
-		Member review = new Gson().fromJson(ret, Member.class);
-		
-		boolean result = new ReviewService().modify(review) > 0;
-		
+		Reply reply = new Gson().fromJson(ret, Reply.class);
+		new ReplyService().modify(reply);
+
 		resp.setContentType("application/json; charset=utf-8");
-		resp.getWriter().print(new Gson().toJson(Map.of("result",result)));
+		resp.getWriter().print(new Gson().toJson(Map.of("result", true)));
 		
 		
 	}
-	
-	
-
 }

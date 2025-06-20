@@ -18,5 +18,4 @@ public class Reply {
 	private String id;		  //아이디
 	private String regdate;  //작성일시
 	private Long bno;		//게시글번호
-	
 }

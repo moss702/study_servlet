@@ -5,14 +5,15 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
 import domain.Member;
-import mapper.ReviewMapper;
+import domain.Reply;
+import mapper.ReplyMapper;
 import util.MyBatisUtil;
 
-public class ReviewService {
-	public Member findBy(Long rno) {
+public class ReplyService {
+	public Reply findBy(Long rno) {
 		try(SqlSession session = MyBatisUtil.getsqlSession()) {
-			ReviewMapper mapper = session.getMapper(ReviewMapper.class);
-			return mapper.findBy(rno);
+			ReplyMapper mapper = session.getMapper(ReplyMapper.class);
+			return mapper.selectOne(rno);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -20,10 +21,10 @@ public class ReviewService {
 		return null;
 	}
 	
-	public int register(Member review) {
+	public int register(Reply Reply) {
 		try(SqlSession session = MyBatisUtil.getsqlSession()) {
-			ReviewMapper mapper = session.getMapper(ReviewMapper.class);
-			return mapper.insert(review);
+			ReplyMapper mapper = session.getMapper(ReplyMapper.class);
+			mapper.insert(Reply);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -31,10 +32,10 @@ public class ReviewService {
 		return 0;
 	}
 
-	public int modify(Member review) {
+	public int modify(Reply Reply) {
 		try(SqlSession session = MyBatisUtil.getsqlSession()) {
-			ReviewMapper mapper = session.getMapper(ReviewMapper.class);
-			return mapper.update(review);
+			ReplyMapper mapper = session.getMapper(ReplyMapper.class);
+			mapper.update(Reply);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -44,8 +45,8 @@ public class ReviewService {
 	
 	public int remove(Long rno) {
 		try(SqlSession session = MyBatisUtil.getsqlSession()) {
-			ReviewMapper mapper = session.getMapper(ReviewMapper.class);
-			return mapper.delete(rno);
+			ReplyMapper mapper = session.getMapper(ReplyMapper.class);
+			mapper.delete(rno);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -53,10 +54,10 @@ public class ReviewService {
 		return 0;
 	}
 	
-	public List<Member> list() {
+	public List<Reply> list(Long bno, Long lastRno) {
 		try(SqlSession session = MyBatisUtil.getsqlSession()) {
-			ReviewMapper mapper = session.getMapper(ReviewMapper.class);
-			return mapper.select();
+			ReplyMapper mapper = session.getMapper(ReplyMapper.class);
+			return mapper.list(bno, lastRno);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -66,14 +67,14 @@ public class ReviewService {
 	
 	
 //	public static void main(String[] args) {
-//		ReviewService service = new ReviewService();
+//		ReplyService service = new ReplyService();
 //
-////		service.register(Review.builder().content("서비스 테스트").pno(1L).rating(5).writer("새똥이").build());
+////		service.register(Reply.builder().content("서비스 테스트").pno(1L).rating(5).writer("새똥이").build());
 //		//데이터 등록
 //				
-////		Review review = service.findBy(1L);
-////		review.setContent("변경된 내용");
-////		service.modify(review);
+////		Reply Reply = service.findBy(1L);
+////		Reply.setContent("변경된 내용");
+////		service.modify(Reply);
 ////		System.out.println(service.findBy(1L));
 //		//rno 찾아서 수정(update)
 //		

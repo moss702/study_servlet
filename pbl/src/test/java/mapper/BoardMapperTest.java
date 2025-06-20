@@ -11,6 +11,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import domain.Board;
+import domain.Reply;
 import domain.dto.Criteria;
 import lombok.extern.slf4j.Slf4j;
 import util.MyBatisUtil;
@@ -70,5 +71,6 @@ public class BoardMapperTest {
 		boardMapper.update(board);
 	}
 	
-	
 }
+
+

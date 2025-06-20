@@ -59,8 +59,10 @@ public class Criteria {
 			cri.page = Integer.parseInt(req.getParameter("page"));
 			cri.amount = Integer.parseInt(req.getParameter("amount"));
 			cri.type = req.getParameter("type");
-			cri.keyword = req.getParameter("keyword");
-		} catch (Exception e) {}
+			cri.keyword = URLDecoder.decode(req.getParameter("keyword"), "utf-8");
+			
+		} 
+		catch (Exception e) {}
 		return cri;
 	}
 	
