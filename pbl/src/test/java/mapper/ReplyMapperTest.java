@@ -55,7 +55,9 @@ public class ReplyMapperTest {
 	@DisplayName("댓글 등록 테스트")
 	public void testInsert() {
 		Reply reply = Reply.builder().content("ㅇㅇ").id("sae0").bno(1024L).build();
+		log.info("{}", reply);
 		replyMapper.insert(reply);
+		log.info("{}", reply);
 	}
 	
 	@Test
