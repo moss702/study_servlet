@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +22,8 @@ import com.google.gson.Gson;
 
 import domain.Attach;
 import lombok.extern.slf4j.Slf4j;
+import net.coobird.thumbnailator.Thumbnailator;
+import net.coobird.thumbnailator.Thumbnails;
 
 @WebServlet("/upload")
 @MultipartConfig(location = "d:/upload/tmp",
@@ -44,6 +47,7 @@ public class UploadFile extends HttpServlet {
 		//첨부파일 리스트 생성
 		List<Attach> attachs = new ArrayList<Attach>();
 		
+		int odr = 0;
 		
 		for(Part part : parts) {
 			if(part.getSize() == 0) {
@@ -80,15 +84,27 @@ public class UploadFile extends HttpServlet {
 			if(!file.exists()) {
 				file.mkdirs();
 			}
-			
+//			log.info(realPath + fileName);
 			part.write(realPath + fileName);
-			
+			//첨부파일이 이미지인 경우, 썸네일 생성
+			if(image) {
+				try {
+					Thumbnails.of(new File(realPath + fileName)).size(150, 150).toFile(realPath + "t_" + fileName);					
+				}
+				catch (Exception e) {
+					//이미지썸네일레이터를 이용해서 썸네일 만들려고 했는데 안되면?
+					// 그냥 너는 이제 이미지가 아닌것이다.
+					image = false;
+				}
+			}
+
 			log.info("{} :: {} :: {} :: {}", fileSize, origin, contentType, ext);
 			attachs.add(Attach.builder()
 					.uuid(fileName)
 					.origin(origin)
 					.image(image)
 					.path(path)
+					.odr(odr++)
 				.build());
 		}
 //		resp.sendRedirect("upload");

@@ -7,7 +7,7 @@
 		
 
         .resize-none {resize: none;}
-        .container {width: 1200px; margin: 0 auto;}
+        .container {max-width: 1200px; margin: 0 auto;}
 
         /* CKE 에디터 경고창 무시 */
         .cke_notifications_area {display: none !important;}
