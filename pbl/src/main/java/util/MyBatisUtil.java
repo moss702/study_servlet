@@ -32,7 +32,11 @@ public class MyBatisUtil {
 	}
 	
 	public static SqlSession getsqlSession() {
-		return sqlSessionFactory.openSession(true);
+		return getsqlSession(true);
+	}
+	
+	public static SqlSession getsqlSession(boolean autoCommit) {
+		return sqlSessionFactory.openSession(autoCommit);
 	}
 	
 	public static void main(String[] args) {

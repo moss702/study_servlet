@@ -32,18 +32,19 @@ public class Board {
 	private Integer cnt;	//count 조회수
 	private Integer cno;	//category no 카테고리번호
 
-//	public Board(Long bno, String title, String content, String id, String regdate, String moddate, Integer cnt,
-//			Integer cno) {
-//		super();
-//		this.bno = bno;
-//		this.title = title;
-//		this.content = content;
-//		this.id = id;
-//		this.regdate = regdate;
-//		this.moddate = moddate;
-//		this.cnt = cnt;
-//		this.cno = cno;
-//	}
+	public Board(Long bno, String title, String content, String id, String regdate, String moddate, 
+			Integer cnt, Integer cno) {
+		super();
+		this.bno = bno;
+		this.title = title;
+		this.content = content;
+		this.id = id;
+		this.regdate = regdate;
+		this.moddate = moddate;
+		this.cnt = cnt;
+		this.cno = cno;
+	}
 	
-	
+	@Builder.Default
+	private List<Attach> attachs = new ArrayList<Attach>();
 }
