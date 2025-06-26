@@ -7,7 +7,8 @@
 <!-- 첨부파일 목록 조회 -->
 	<select id="list" resultType="attach">
 			select * from tbl_attach 
-			where bno = #{bno}
+			where bno = #{bno} 
+			order by odr
 	</select>
 	
 <!-- 첨부파일 단일조회 -->
@@ -18,8 +19,8 @@
 	
 <!-- 첨부파일 등록 -->
 	<insert id="insert">
-			insert into tbl_attach (uuid, origin, path, image, odr, bno, rno) 
-			values (#{uuid}, #{origin}, #{path}, #{image}, #{odr}, #{bno}, #{rno})
+			insert into tbl_attach (uuid, origin, path, image, odr, bno, rno, size) 
+			values (#{uuid}, #{origin}, #{path}, #{image}, #{odr}, #{bno}, #{rno}, #{size})
 	</insert>
 	
 <!-- 첨부파일 삭제 -->

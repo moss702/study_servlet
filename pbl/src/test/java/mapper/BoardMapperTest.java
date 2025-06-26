@@ -33,7 +33,7 @@ public class BoardMapperTest {
 	@DisplayName("단일 게시글 조회용 테스트")
 	public void testSelectOne() {
 		// given
-		Long bno = 1L;
+		Long bno = 1028L;
 		
 		// when
 		Board board = boardMapper.selectOne(bno);
@@ -53,6 +53,14 @@ public class BoardMapperTest {
 	}
 	
 	@Test
+	@DisplayName("목록 조회 3페이지 10개씩 2번 카테고리")
+	public void testlist1() {
+		Criteria cri = new Criteria(3, 10, 2);
+		List<Board> list = boardMapper.list(cri);
+		list.forEach(b -> log.info("{} {} {}", b.getAttachCnt(), b.getReplyCnt(), b.getAttachs()));
+	}
+	
+	@Test
 	@DisplayName("목록 조회 검색테스트")
 	public void testlist2() {
 		Criteria cri = new Criteria(1, 10, 2, "TI", "점메추");
@@ -69,6 +77,14 @@ public class BoardMapperTest {
 		board.setTitle("제목 수정");
 		
 		boardMapper.update(board);
+	}
+	
+	
+	@Test
+	@DisplayName("조회 증가 테스트")
+	public void testIncreaseCnt() {
+		Long bno = 1028L;
+		boardMapper.increaseCnt(bno);
 	}
 	
 }

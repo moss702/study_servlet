@@ -3,9 +3,11 @@ package domain;
 
 import org.apache.ibatis.type.Alias;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -14,6 +16,8 @@ import lombok.ToString;
 @ToString
 @Builder
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Alias("attach")
 public class Attach {
 	private String uuid;	//첨부파일ID * 유니버셜유니크아이디
@@ -23,13 +27,16 @@ public class Attach {
 	private Long bno;	//게시글번호
 	private Long rno;	//댓글번호
 	private int odr; //첨부파일 순서 * 인티저 기본값 null, 인트 기본값 0
-	
-	@Setter
-	private String info;
-	
-	public String getInfo() {
-		String[] strs = {"uuid=" + uuid, "path=" + path, "origin=" + origin};
-		return String.join("&", strs);
-	}
+	private long size; //첨부파일의 크기
 
+	public Attach(String uuid, String path, boolean image, String origin, Long bno, int odr, long size) {
+		super();
+		this.uuid = uuid;
+		this.path = path;
+		this.image = image;
+		this.origin = origin;
+		this.bno = bno;
+		this.odr = odr;
+		this.size = size;
+	}
 }

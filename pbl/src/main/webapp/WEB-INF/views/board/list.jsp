@@ -75,7 +75,13 @@
                         <div class="col-1 small">${board.bno}</div>
                         <div class="col-1 small">${board.cno}</div>
                         <div class="col text-start text-black">${board.title}
-                        	<span class="small text-danger fw-bold">1</span>
+                        	<span class="small text-danger fw-bold">${board.replyCnt}</span>
+                       		
+                       		<!-- 첨부파일이 있을때 아이콘 표시 -->
+                       		<c:if test="${board.attachCnt > 0}">
+                       			<i class="fa-solid fa-paperclip text-muted"></i>
+                       		</c:if>
+                       		
                         </div>
                         <div class="col-1 small"><span>
                         <fmt:parseDate value="${board.regdate}" pattern="yyyy-MM-dd HH:mm:ss" var="parsedDate" />

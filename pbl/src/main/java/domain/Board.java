@@ -31,9 +31,11 @@ public class Board {
 	private String moddate;		//수정일자
 	private Integer cnt;	//count 조회수
 	private Integer cno;	//category no 카테고리번호
-
-	public Board(Long bno, String title, String content, String id, String regdate, String moddate, 
-			Integer cnt, Integer cno) {
+	private int replyCnt; //게시글의 댓글개수
+	private int attachCnt;
+	
+	public Board(Long bno, String title, String content, String id, String regdate, String moddate, Integer cnt,
+			Integer cno, int replyCnt, int attachCnt) {
 		super();
 		this.bno = bno;
 		this.title = title;
@@ -43,8 +45,11 @@ public class Board {
 		this.moddate = moddate;
 		this.cnt = cnt;
 		this.cno = cno;
+		this.replyCnt = replyCnt;
+		this.attachCnt = attachCnt;
 	}
-	
+
 	@Builder.Default
 	private List<Attach> attachs = new ArrayList<Attach>();
+
 }

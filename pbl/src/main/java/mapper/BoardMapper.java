@@ -19,4 +19,6 @@ public interface BoardMapper {
 	
 	long getCount(Criteria cri);
 	
+	void increaseCnt(Long bno);
+	
 }

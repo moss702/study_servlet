@@ -105,6 +105,7 @@ public class UploadFile extends HttpServlet {
 					.image(image)
 					.path(path)
 					.odr(odr++)
+					.size(fileSize)
 				.build());
 		}
 //		resp.sendRedirect("upload");

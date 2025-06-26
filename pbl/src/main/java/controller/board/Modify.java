@@ -2,7 +2,9 @@ package controller.board;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.Type;
 import java.net.URLEncoder;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,6 +12,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import domain.Attach;
 import domain.Board;
 import domain.dto.Criteria;
 import lombok.extern.slf4j.Slf4j;
@@ -59,8 +65,13 @@ public class Modify extends HttpServlet{
 //		Integer cno = Integer.valueOf(req.getParameter("cno"));
 		Integer cno = cri.getCno();
 		Long bno = Long.valueOf(req.getParameter("bno"));
+
+		String encodedStr = req.getParameter("encodedStr");
+		Type type = new TypeToken<List<Attach>>() {}.getType(); 
+		List<Attach> list = new Gson().fromJson(encodedStr, type);
+		log.info("리스트 {}", list);
 		
-		Board board = Board.builder().title(title).content(content).id(id).cno(cno).bno(bno).build();
+		Board board = Board.builder().attachs(list).title(title).content(content).id(id).cno(cno).bno(bno).build();
 		log.info("{}", board);
 		
 		// 서비스 호출
