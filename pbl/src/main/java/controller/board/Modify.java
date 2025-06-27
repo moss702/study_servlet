@@ -65,8 +65,10 @@ public class Modify extends HttpServlet{
 //		Integer cno = Integer.valueOf(req.getParameter("cno"));
 		Integer cno = cri.getCno();
 		Long bno = Long.valueOf(req.getParameter("bno"));
-
+		
+		
 		String encodedStr = req.getParameter("encodedStr");
+
 		Type type = new TypeToken<List<Attach>>() {}.getType(); 
 		List<Attach> list = new Gson().fromJson(encodedStr, type);
 		log.info("리스트 {}", list);

@@ -9,6 +9,7 @@ import domain.dto.Criteria;
 import lombok.extern.slf4j.Slf4j;
 import mapper.AttachMapper;
 import mapper.BoardMapper;
+import mapper.ReplyMapper;
 import util.MyBatisUtil;
 
 @Slf4j
@@ -83,14 +84,26 @@ public class BoardService {
     }
 
     public void remove(Long bno) {
-        try (SqlSession session = MyBatisUtil.getsqlSession()) {
-            BoardMapper mapper = session.getMapper(BoardMapper.class);
+	   	SqlSession session = MyBatisUtil.getsqlSession(false);
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+            AttachMapper attachMapper = session.getMapper(AttachMapper.class);
+            ReplyMapper replyMapper = session.getMapper(ReplyMapper.class);
+
+            replyMapper.deleteByBno(bno);
+            attachMapper.deleteByBno(bno);
             mapper.delete(bno);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+            
+            session.commit();
+	    } catch (Exception e) { //중간에 문제 있으면 롤백
+	    	session.rollback();
+	        e.printStackTrace();
+	    } finally { //성공 또는 실패 상관없이 완료되면 세션 close
+	    	session.close();
+	    }
     }
 
+    
     public long getCount(Criteria cri) {
         try (SqlSession session = MyBatisUtil.getsqlSession()) {
             BoardMapper mapper = session.getMapper(BoardMapper.class);
@@ -100,5 +113,8 @@ public class BoardService {
         }
         return 0;
     }
+    
+    
+    
 
 }

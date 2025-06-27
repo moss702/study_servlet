@@ -12,8 +12,19 @@
 <%@ include file="../common/nav.jsp" %>
     <div class="container p-0">
         <main>
-            <form id="modifyForm" method="post" action="modify" onsubmit="return confirm('수정하시겠습니까?')">
-                <div class="small border-bottom border-3 border-secondary p-0 pb-2"><a href="#" class="small"><span class="text-primary">자유게시판</span> 카테고리</a></div>
+            <form method="post" action="modify" id="modifyForm">
+                <div class="small border-bottom border-3 border-secondary p-0 pb-2">
+                	<a href="#" class="small">
+	                	<span class="text-primary">
+	                		<c:forEach items="${cate}" var="c">
+	                			<c:if test="${c.cno == cri.cno}">
+	                				${c.cname}
+	                			</c:if>
+	                		</c:forEach>
+	                	</span> 
+                		카테고리
+                	</a>
+               	</div>
                 <div class="small p-0 py-2">
                     <input placeholder="글 제목 입력" class="form-control" name="title" id="title" value="${board.title}">
                 </div>
@@ -21,7 +32,7 @@
                     <textarea name="content" id="editor1" class="form-control resize-none">${board.content}</textarea>
                 </div>
                 <div>
-                    <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-list-ul"></i> 목록</button>
+                    <a href="${cp}/board/list?${cri.qs2}" class="btn btn-secondary btn-sm"><i class="fa-solid fa-list-ul"></i> 목록</a>
                     <div class="float-end">
                         <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i>  글 수정</button>
                     </div>
@@ -72,6 +83,7 @@
 			
         </main>
     </div>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <script>
         $(function() {
             CKEDITOR.replace('editor1', {
@@ -81,7 +93,7 @@
     </script>
    	<script>
 	$(function() {
-
+		$(".attach-list").sortable();
 		//return true / false
 		function validateFiles(files) {
 			const MAX_COUNT = 5;
@@ -169,7 +181,7 @@
 							data-origin="\${a.origin}"
 							data-image="\${a.image}"
 							data-path="\${a.path}"
-							data-size="${a.size}"
+							data-size="\${a.size}"
 							data-odr="\${a.odr}"
 						>
 							<a href="${cp}/download?uuid=\${a.uuid}&origin=\${a.origin}&path=\${a.path}">\${a.origin}</a>
@@ -193,20 +205,22 @@
 				}
 			})
 		})
-$('#modifyForm').submit(function(){
-			event.preventDefault();
-			const data = [];
-			$(".attach-list li").each(function(){
-				//console.log({...this.dataset});
-				data.push({...this.dataset});
-			});
-			console.log(JSON.stringify(data));
-			
-			$("[name='encodedStr']").val(JSON.stringify(data));
-			this.submit();
-			
-		})
+	$('#modifyForm').submit(function(){
+		event.preventDefault();
+		if(!confirm('수정하시겠습니까?')){
+			return;
+		}
+		const data = [];
+		$(".attach-list li").each(function(){
+			//console.log({...this.dataset});
+			data.push({...this.dataset});
+		});
+		console.log(JSON.stringify(data));
+		data.forEach((item, idx) => item.odr = idx);
+		$("[name='encodedStr']").val(JSON.stringify(data));
+		this.submit();
 	})
+})
 	</script>
     
 <%@ include file="../common/footer.jsp" %>

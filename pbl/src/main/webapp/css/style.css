@@ -50,6 +50,8 @@
         main::after{display: block; content: ''; clear: both;}
         /* footer {clear: both;} main::after에서 clear:both 줬기 때문에 footer에 따로 안줘도 된다 */
 		
+    	.attach-list {cursor: grab;}
+    	.attach-list:active {cursor: grabbing;}
 		.attach-area i {cursor: pointer;}
 		.attach-thumb div div {background: no-repeat center;}
 		

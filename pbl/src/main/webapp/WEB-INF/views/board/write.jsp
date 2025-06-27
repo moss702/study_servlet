@@ -12,8 +12,19 @@
 <%@ include file="../common/nav.jsp" %>
     <div class="container p-0">
         <main>
-            <form method="post" id="writeForm">
-                <div class="small border-bottom border-3 border-secondary p-0 pb-2"><a href="#" class="small"><span class="text-primary">자유게시판</span> 카테고리</a></div>
+            <form method="post" id="writeForm" action="write">
+                <div class="small border-bottom border-3 border-secondary p-0 pb-2">
+                	<a href="#" class="small">
+	                	<span class="text-primary">
+	                		<c:forEach items="${cate}" var="c">
+	                			<c:if test="${c.cno == cri.cno}">
+	                				${c.cname}
+	                			</c:if>
+	                		</c:forEach>
+	                	</span> 
+                		카테고리
+                	</a>
+               	</div>
                 <div class="small p-0 py-2">
                     <input placeholder="글 제목 입력" class="form-control" name="title" id="title">
                 </div>
@@ -39,11 +50,16 @@
                     </div>
                 </div>
                 <input type="hidden" name="id" value="${member.id}" />
-                <input type="hidden" name="cno" value="2" />
+                <input type="hidden" name="cno" value="${cri.cno}" />
+                <input type="hidden" name="page" value="1" />
+                <input type="hidden" name="amount" value="${cri.amount}" />
                 <input type="hidden" name="encodedStr" value="">
             </form>
         </main>
     </div>
+
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        
     <script>
         $(function() {
             CKEDITOR.replace('editor1', {
@@ -51,9 +67,12 @@
             });
         });        
     </script>
+    
+
+    
 	<script>
 	$(function() {
-
+		$(".attach-list").sortable();
 		//return true / false
 		function validateFiles(files) {
 			const MAX_COUNT = 5;
@@ -161,7 +180,10 @@
 			$(".attach-list li").each(function() {
 				data.push({...this.dataset});
 			});
-			// console.log(JSON.stringify(data));
+			console.log(JSON.stringify(data));
+			data.forEach((item, idx) => item.odr = idx);
+			// attbut에 있던 속성들을 다시 덮어쓰기
+			
 			$("[name='encodedStr']").val(JSON.stringify(data));
 			this.submit();
 		})

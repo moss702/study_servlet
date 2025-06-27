@@ -20,7 +20,16 @@
         
 <!-- 보드 -->
         <div class="small border-bottom border-3 border-primary p-0 pb-2">
-            <a href="#" class="small"><span class="text-primary">자유게시판</span> 카테고리</a>
+             <a href="#" class="small">
+               	<span class="text-primary">
+               		<c:forEach items="${cate}" var="c">
+               			<c:if test="${c.cno == cri.cno}">
+               				${c.cname}
+               			</c:if>
+               		</c:forEach>
+               	</span> 
+              		카테고리
+              	</a>
         </div>
         
            <div class="small p-0 py-2">
@@ -28,7 +37,7 @@
                 <span class="px-2">${board.title}</span> 
                 <div class="float-end small me-3">
                     <span class="text-muted"><i class="fa-solid fa-eye"></i> ${board.cnt}</span>
-                    <span class="text-muted"><i class="fa-regular fa-comment-dots"></i> 댓글</span>
+                    <span class="text-muted"><i class="fa-regular fa-comment-dots"></i> ${board.replyCnt}</span>
                 </div>
             </div>
             
@@ -145,7 +154,6 @@
 	        <button type="submit" class="btn btn-warning btn-sm btn-modify-submit">Modify</button>
 	        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
 	      </div>
-	      
 	 </div>
   </div>
 </div>
