@@ -43,7 +43,27 @@ public class BoardService {
     	SqlSession session = MyBatisUtil.getsqlSession(false);
     	try {
             BoardMapper mapper = session.getMapper(BoardMapper.class);
-            mapper.insert(board);
+            Long bno = board.getBno();
+            if (bno == null) {   // 답글이 아님 :: 신규 글
+            	mapper.insert(board);
+            	mapper.updateGrpMyself(board);
+            } else {  // 답글임
+        		// 1. 부모글 조회 * 부모의 파라미터 가져와서 조정하기
+        		Board parent = mapper.selectOne(bno);
+        		
+        		// 2. maxSeq 취득 * select
+        		int maxSeq = mapper.selectMaxSeq(parent);
+        		board.setSeq(maxSeq + 1); //순서 지정 * 부모보다 +1
+        		
+        		// 3. 해당 조건의 게시글들의 seq 밀기 = 내 위치에 작성하기 위한 update
+        		board.setGrp(parent.getGrp());
+        		board.setDepth(parent.getDepth()+1); //깊이 지정 * 부모보다 +1
+        		mapper.updateSeqIncrease(board);
+        		
+        		// insert * 답글 등록하기
+        		mapper.insertChild(board);
+            }
+            
             AttachMapper attachMapper = session.getMapper(AttachMapper.class);
             board.getAttachs().forEach(a -> {
             	a.setBno(board.getBno());
@@ -57,7 +77,6 @@ public class BoardService {
         	session.close();
         }
     }
-    
     
 	public void modify(Board board) {
 	   	SqlSession session = MyBatisUtil.getsqlSession(false);
@@ -113,8 +132,4 @@ public class BoardService {
         }
         return 0;
     }
-    
-    
-    
-
 }

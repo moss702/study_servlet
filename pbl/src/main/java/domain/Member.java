@@ -1,9 +1,13 @@
 package domain;
 
 
+import org.apache.ibatis.type.Alias;
+
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -12,6 +16,9 @@ import lombok.ToString;
 @ToString
 @Builder
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Alias("member")
 public class Member {
 	private Long no;	//회원번호
 	private String id;  //아이디

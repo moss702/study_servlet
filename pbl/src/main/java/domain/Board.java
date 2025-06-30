@@ -34,6 +34,15 @@ public class Board {
 	private int replyCnt; //게시글의 댓글개수
 	private int attachCnt;
 	
+	// 답글기능을 위한 3개의 필드
+	private Long grp;
+
+	@Builder.Default
+	private int seq = 1; // null이면 안됨. 기본값 1
+	@Builder.Default
+	private int depth = 1;
+	
+	
 	public Board(Long bno, String title, String content, String id, String regdate, String moddate, Integer cnt,
 			Integer cno, int replyCnt, int attachCnt) {
 		super();

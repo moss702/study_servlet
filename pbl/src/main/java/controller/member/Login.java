@@ -15,6 +15,7 @@ import domain.dto.Criteria;
 import lombok.extern.slf4j.Slf4j;
 import service.MemberService;
 import util.HikariCPUtil;
+import util.ParamUtil;
 
 @WebServlet("/member/login")
 @Slf4j
@@ -27,22 +28,19 @@ public class Login extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-				
-		String id = req.getParameter("id");
-		String pw = req.getParameter("pw");
-		log.info("{} {}", id, pw);
-		//중간값 제대로 수집했나 확인 수시로!
-		
-		new MemberService().login(id,pw);
-
-		boolean ret = new MemberService().login(id,pw);
+		Member member = ParamUtil.get(req, Member.class);
+		boolean ret = new MemberService().login(member.getId(), member.getPw());
 		log.info("{}", ret);
+		
+//		String id = req.getParameter("id");
+//		String pw = req.getParameter("pw"); //중간값 제대로 수집했나 확인 수시로!
+//		new MemberService().login(id,pw);
+//		boolean ret = new MemberService().login(id,pw);
 		
 		if(ret) { //로그인 성공
 			HttpSession session = req.getSession();
 			session.setMaxInactiveInterval(60 * 10); //세션 유지기간 *10분
-			session.setAttribute("member", new MemberService().findById(id));
-			
+			session.setAttribute("member", new MemberService().findById(member.getId()));
 			
 			//로그인 성공했을때 보낼곳
 			String url = req.getParameter("url");
