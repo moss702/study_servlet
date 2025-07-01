@@ -32,6 +32,8 @@ import net.coobird.thumbnailator.Thumbnails;
 	fileSizeThreshold = 1 * 1024 * 1024) // 이 크기를 넘어가면 location위치에 buffer를 기록함
 @Slf4j
 public class UploadFile extends HttpServlet {
+	public final static String UPLOAD_PATH = "d:/upload/files";
+	//전역함수로 올렷음. 다른곳에서 호출할때 UploadFile.UPLOAD_PATH 하면됨
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,7 +44,7 @@ public class UploadFile extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	//업로드된 파일 처리
 		Collection<Part> parts = req.getParts();
-		final String UPLOAD_PATH = "d:/upload/files";
+
 		
 		//첨부파일 리스트 생성
 		List<Attach> attachs = new ArrayList<Attach>();
@@ -114,9 +116,11 @@ public class UploadFile extends HttpServlet {
 		resp.getWriter().print(new Gson().toJson(attachs));
 	}
 	
+//	private String genPath() {
+//		return new SimpleDateFormat("yyyy/MM/dd").format(new Date());
+//	}
 	private String genPath() {
-		return new SimpleDateFormat("yyyy/MM/dd").format(new Date());
-	}
-
+		return new SimpleDateFormat("yyyy/MM/dd").format(new Date().getTime() - 1000 * 60 * 60 * 24);
+	}	
 	
 }

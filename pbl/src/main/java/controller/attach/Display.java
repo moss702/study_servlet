@@ -28,7 +28,7 @@ public class Display extends HttpServlet {
 		String path = req.getParameter("path");
 		log.info("{},{}", uuid, path);
 		
-		File file = new File(UPLOAD_PATH + "/" + path, uuid);
+		File file = new File(UploadFile.UPLOAD_PATH + "/" + path, uuid);
 		if(!file.exists()) {
 			resp.setContentType("text/html; charset=utf-8");
 			resp.getWriter().println("<h3>파일이 존재하지 않습니다</h3>");
