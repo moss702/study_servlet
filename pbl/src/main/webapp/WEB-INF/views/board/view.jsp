@@ -20,6 +20,7 @@
         
 <!-- 보드 -->
         <div class="small border-bottom border-3 border-primary p-0 pb-2">
+        
              <a href="#" class="small">
                	<span class="text-primary">
                		<c:forEach items="${cate}" var="c">
@@ -91,7 +92,7 @@
 						<div class="my-2 col-12 col-sm-4 col-lg-2" 
 							data-uuid="${a.uuid}">
 							<div class="my-2 bg-primary" style="height: 150px; background-size: cover; 
-								background-image:url('/pbl/display?uuid=t_${a.uuid}&path=${a.path}')">
+								background-image:url('${s3url}${a.path}/t_${a.uuid}')">
 								<!-- <i class="fa-solid fa-xmark float-end text-danger m-2"></i> -->
 							</div>
 						</div>

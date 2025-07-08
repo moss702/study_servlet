@@ -20,23 +20,10 @@ public class HikariCPUtil {
 		HikariConfig config = new HikariConfig();
 		
 		Hashtable<String, Object> hashtable;
-		
-		// Properties <String, String>
-		// 설정 정보 관리, 파일
-		Properties props = new Properties();
-		
-		// 현재 실행중인 스레드의 컨텍스트 클래스로더의 위치에서 resource를 stream 형태로 가져오기
-		try (InputStream is = Thread.currentThread()
-								.getContextClassLoader()
-								.getResourceAsStream("secret/db.properties")) {
-			if (is == null) {
-				throw new FileNotFoundException("Cannot find db.properties in classpath");
-			}
-			props.load(is);
-		} catch (IOException e){
-			e.printStackTrace();
-		}
-		
+
+		Properties props = PropsLoaderUtil.getProperties("secret/db.properties"); 
+		// static 붙어있음 = 클래스이름 명시 호출
+		// 안붙어있을때 = new로 객체생성
 
 		config.setJdbcUrl(props.getProperty("jdbc.url"));
 		config.setUsername(props.getProperty("jdbc.username"));
