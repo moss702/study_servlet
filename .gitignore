@@ -5,6 +5,6 @@
 bin
 Servers
 build
-secret
+.secret
 aws_s3.properties
 db.properties
