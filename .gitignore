@@ -1,0 +1,10 @@
+.metadata
+.classpath
+.project
+.settings
+bin
+Servers
+build
+.secret
+aws_s3.properties
+db.properties

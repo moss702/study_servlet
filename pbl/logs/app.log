@@ -1,0 +1,308 @@
+09:56:39.985 [main] INFO  StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:56:39.995 [main] INFO  SimpleThreadPool - Job execution threads will use class loader of thread: main
+09:56:40.016 [main] INFO  SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:56:40.020 [main] INFO  QuartzScheduler - Quartz Scheduler v2.5.0 created.
+09:56:40.021 [main] INFO  RAMJobStore - RAMJobStore initialized.
+09:56:40.022 [main] INFO  QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:56:40.023 [main] INFO  StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:56:40.023 [main] INFO  StdSchedulerFactory - Quartz scheduler version: 2.5.0
+09:56:40.036 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+09:56:40.043 [DefaultQuartzScheduler_Worker-1] INFO  TimerJob - 
+09:56:45.005 [DefaultQuartzScheduler_Worker-2] INFO  TimerJob - 
+09:56:50.004 [DefaultQuartzScheduler_Worker-3] INFO  TimerJob - 
+09:56:55.003 [DefaultQuartzScheduler_Worker-4] INFO  TimerJob - 
+09:57:00.002 [DefaultQuartzScheduler_Worker-5] INFO  TimerJob - 
+09:57:01.573 [main] INFO  StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:57:01.577 [main] INFO  SimpleThreadPool - Job execution threads will use class loader of thread: main
+09:57:01.595 [main] INFO  SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:57:01.601 [main] INFO  QuartzScheduler - Quartz Scheduler v2.5.0 created.
+09:57:01.602 [main] INFO  RAMJobStore - RAMJobStore initialized.
+09:57:01.603 [main] INFO  QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:57:01.603 [main] INFO  StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:57:01.604 [main] INFO  StdSchedulerFactory - Quartz scheduler version: 2.5.0
+09:57:01.617 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+09:57:05.002 [DefaultQuartzScheduler_Worker-6] INFO  TimerJob - 
+09:57:05.011 [DefaultQuartzScheduler_Worker-1] INFO  TimerJob - 
+09:57:10.004 [DefaultQuartzScheduler_Worker-7] INFO  TimerJob - 
+09:57:10.004 [DefaultQuartzScheduler_Worker-2] INFO  TimerJob - 
+09:57:15.003 [DefaultQuartzScheduler_Worker-3] INFO  TimerJob - 
+09:57:15.004 [DefaultQuartzScheduler_Worker-8] INFO  TimerJob - 
+09:57:20.004 [DefaultQuartzScheduler_Worker-9] INFO  TimerJob - 
+09:57:20.006 [DefaultQuartzScheduler_Worker-4] INFO  TimerJob - 
+09:57:25.000 [DefaultQuartzScheduler_Worker-10] INFO  TimerJob - 
+09:57:25.001 [DefaultQuartzScheduler_Worker-5] INFO  TimerJob - 
+09:57:30.003 [DefaultQuartzScheduler_Worker-6] INFO  TimerJob - 
+09:57:30.021 [DefaultQuartzScheduler_Worker-1] INFO  TimerJob - 
+09:57:35.000 [DefaultQuartzScheduler_Worker-2] INFO  TimerJob - 
+09:57:35.000 [DefaultQuartzScheduler_Worker-7] INFO  TimerJob - 
+09:57:40.004 [DefaultQuartzScheduler_Worker-8] INFO  TimerJob - 
+09:57:40.014 [DefaultQuartzScheduler_Worker-3] INFO  TimerJob - 
+09:57:40.045 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+09:57:40.046 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+09:57:40.047 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+09:57:45.001 [DefaultQuartzScheduler_Worker-9] INFO  TimerJob - 
+09:57:50.001 [DefaultQuartzScheduler_Worker-10] INFO  TimerJob - 
+09:57:55.006 [DefaultQuartzScheduler_Worker-1] INFO  TimerJob - 
+09:58:00.002 [DefaultQuartzScheduler_Worker-2] INFO  TimerJob - 
+09:58:01.619 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+09:58:01.620 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+09:58:01.622 [main] INFO  QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+10:26:28.727 [main] INFO  GhostFileCleanupJob - { }
+11:28:04.975 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+11:28:05.647 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 6 msec}
+11:28:05.666 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+11:28:05.685 [main] INFO  GhostFileCleanupJob - [d:\upload\files\2025\06\30\38551586-2f5d-4bc2-a5ea-5c764dffde41.jpg, d:\upload\files\2025\06\30\t_0cc13619-d955-497a-8195-90e22abab352.gif, d:\upload\files\2025\06\30\t_38551586-2f5d-4bc2-a5ea-5c764dffde41.jpg, d:\upload\files\2025\06\30\t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, d:\upload\files\2025\06\30\t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg]
+11:35:50.874 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+11:35:51.546 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 7 msec}
+11:35:51.563 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+11:35:51.581 [main] INFO  GhostFileCleanupJob - []
+11:58:31.411 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+11:58:32.099 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 9 msec}
+11:58:32.117 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|de87a9a5-1642-4a4a-b1bb-3e6d60c50d07.png |2025/06/30 |true  |image.png                              |1081 |[null] |0   |2078  |
+|f7444798-abeb-4588-945d-ac3e80483cf5.txt |2025/06/30 |false |00.txt                                 |1081 |[null] |1   |112   |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+11:58:32.128 [main] INFO  GhostFileCleanupJob - [d:\upload\files\2025\06\30\0cc13619-d955-497a-8195-90e22abab352.gif, d:\upload\files\2025\06\30\43e1a350-3388-434b-96e4-6ec44ac61622.jpg, d:\upload\files\2025\06\30\6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, d:\upload\files\2025\06\30\92aeff74-c35a-42d5-806c-6602c7078f01.jpg, d:\upload\files\2025\06\30\d83af72c-efc9-4ffb-bf05-ae4feb05956a.jpg, d:\upload\files\2025\06\30\de87a9a5-1642-4a4a-b1bb-3e6d60c50d07.png, d:\upload\files\2025\06\30\fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, d:\upload\files\2025\06\30\t_43e1a350-3388-434b-96e4-6ec44ac61622.jpg, d:\upload\files\2025\06\30\t_92aeff74-c35a-42d5-806c-6602c7078f01.jpg, d:\upload\files\2025\06\30\t_d83af72c-efc9-4ffb-bf05-ae4feb05956a.jpg]
+11:59:58.007 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+11:59:58.671 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 7 msec}
+11:59:58.691 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|de87a9a5-1642-4a4a-b1bb-3e6d60c50d07.png |2025/06/30 |true  |image.png                              |1081 |[null] |0   |2078  |
+|f7444798-abeb-4588-945d-ac3e80483cf5.txt |2025/06/30 |false |00.txt                                 |1081 |[null] |1   |112   |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+11:59:58.700 [main] INFO  GhostFileCleanupJob - []
+12:14:11.419 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+12:14:12.411 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 18 msec}
+12:14:12.431 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|a45536c6-d47b-452d-ae68-edcabd79822d.jpg |2025/06/30 |true  |04-1.jpg                               |1082 |[null] |0   |32532 |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+12:14:12.438 [main] INFO  GhostFileCleanupJob - ======== attachs =========
+12:14:12.438 [main] INFO  GhostFileCleanupJob - Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:14:12.446 [main] INFO  GhostFileCleanupJob - Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:14:12.447 [main] INFO  GhostFileCleanupJob - Attach(uuid=a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:14:12.447 [main] INFO  GhostFileCleanupJob - Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:14:12.450 [main] INFO  GhostFileCleanupJob - ======== thumbs =========
+12:14:12.451 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:14:12.451 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:14:12.451 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:14:12.451 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:14:12.451 [main] INFO  GhostFileCleanupJob - ======== attachs+thumbs =========
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:14:12.452 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:14:12.453 [main] INFO  GhostFileCleanupJob - attachs+thumbs [Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), Attach(uuid=a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), Attach(uuid=t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647)]
+12:14:12.453 [main] INFO  GhostFileCleanupJob - [d:\upload\files\2025\06\30\02cf2193-7913-47c5-b47f-40347756921b.png, d:\upload\files\2025\06\30\41661a5e-f6bb-43e7-997c-148b7d69010b.txt, d:\upload\files\2025\06\30\t_02cf2193-7913-47c5-b47f-40347756921b.png]
+12:16:04.197 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+12:16:04.898 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 9 msec}
+12:16:04.923 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg |2025/06/30 |true  |04-4.jpg                               |1083 |[null] |0   |35698 |
+|a45536c6-d47b-452d-ae68-edcabd79822d.jpg |2025/06/30 |true  |04-1.jpg                               |1082 |[null] |0   |32532 |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+12:16:04.930 [main] INFO  GhostFileCleanupJob - ======== attachs =========
+12:16:04.931 [main] INFO  GhostFileCleanupJob - Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:04.943 [main] INFO  GhostFileCleanupJob - Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:04.943 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:04.943 [main] INFO  GhostFileCleanupJob - Attach(uuid=a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:16:04.943 [main] INFO  GhostFileCleanupJob - Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:04.946 [main] INFO  GhostFileCleanupJob - ======== thumbs =========
+12:16:04.946 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:04.946 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:04.946 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:04.946 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:16:04.947 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:04.947 [main] INFO  GhostFileCleanupJob - ======== attachs+thumbs =========
+12:16:04.947 [main] INFO  GhostFileCleanupJob - Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:04.948 [main] INFO  GhostFileCleanupJob - Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:04.948 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:04.951 [main] INFO  GhostFileCleanupJob - Attach(uuid=a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:16:04.951 [main] INFO  GhostFileCleanupJob - Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:04.952 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:04.953 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:04.953 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:04.953 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg, path=2025/06/30, image=true, origin=04-1.jpg, bno=1082, rno=null, odr=0, size=32532), 
+12:16:04.953 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:04.954 [main] INFO  GhostFileCleanupJob - ======== dbListFiles =========
+12:16:04.955 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\0cc13619-d955-497a-8195-90e22abab352.gif, 
+12:16:04.955 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, 
+12:16:04.955 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:16:04.957 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\a45536c6-d47b-452d-ae68-edcabd79822d.jpg, 
+12:16:04.957 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, 
+12:16:04.957 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_0cc13619-d955-497a-8195-90e22abab352.gif, 
+12:16:04.957 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, 
+12:16:04.958 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:16:04.958 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg, 
+12:16:04.958 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, 
+12:16:04.959 [main] INFO  GhostFileCleanupJob - [d:\upload\files\2025\06\30\fd310441-e150-4c7d-aab2-a9bf587f3e40.jpg, d:\upload\files\2025\06\30\t_fd310441-e150-4c7d-aab2-a9bf587f3e40.jpg]
+12:16:19.359 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+12:16:20.066 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 22 msec}
+12:16:20.087 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|uuid                                     |path       |image |origin                                 |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+|0cc13619-d955-497a-8195-90e22abab352.gif |2025/06/30 |true  |circuitpython_sample-nyan-pyportal.gif |1048 |[null] |0   |13717 |
+|6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg |2025/06/30 |true  |istockphoto-1973365581-612x612.jpg     |1046 |[null] |0   |84926 |
+|6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg |2025/06/30 |true  |04-4.jpg                               |1083 |[null] |0   |35698 |
+|fb99611e-9e10-4758-8ca8-4db040c193e3.jpg |2025/06/30 |true  |04-2.jpg                               |1080 |[null] |0   |36647 |
+|-----------------------------------------|-----------|------|---------------------------------------|-----|-------|----|------|
+
+12:16:20.093 [main] INFO  GhostFileCleanupJob - ======== attachs =========
+12:16:20.093 [main] INFO  GhostFileCleanupJob - Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:20.107 [main] INFO  GhostFileCleanupJob - Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:20.108 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:20.108 [main] INFO  GhostFileCleanupJob - Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:20.110 [main] INFO  GhostFileCleanupJob - ======== thumbs =========
+12:16:20.111 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:20.111 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:20.111 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:20.112 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:20.112 [main] INFO  GhostFileCleanupJob - ======== attachs+thumbs =========
+12:16:20.112 [main] INFO  GhostFileCleanupJob - Attach(uuid=0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:20.113 [main] INFO  GhostFileCleanupJob - Attach(uuid=6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:20.114 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:20.114 [main] INFO  GhostFileCleanupJob - Attach(uuid=fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:20.114 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_0cc13619-d955-497a-8195-90e22abab352.gif, path=2025/06/30, image=true, origin=circuitpython_sample-nyan-pyportal.gif, bno=1048, rno=null, odr=0, size=13717), 
+12:16:20.115 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, path=2025/06/30, image=true, origin=istockphoto-1973365581-612x612.jpg, bno=1046, rno=null, odr=0, size=84926), 
+12:16:20.117 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:16:20.118 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, path=2025/06/30, image=true, origin=04-2.jpg, bno=1080, rno=null, odr=0, size=36647), 
+12:16:20.119 [main] INFO  GhostFileCleanupJob - ======== dbListFiles =========
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\0cc13619-d955-497a-8195-90e22abab352.gif, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_0cc13619-d955-497a-8195-90e22abab352.gif, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6cbcfe3f-0346-4918-88d7-138a9f9700a4.jpg, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_fb99611e-9e10-4758-8ca8-4db040c193e3.jpg, 
+12:16:20.120 [main] INFO  GhostFileCleanupJob - [d:\upload\files\2025\06\30\a45536c6-d47b-452d-ae68-edcabd79822d.jpg, d:\upload\files\2025\06\30\t_a45536c6-d47b-452d-ae68-edcabd79822d.jpg]
+12:21:58.087 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+12:21:58.808 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 7 msec}
+12:21:58.825 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+|uuid                                     |path       |image |origin   |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+|6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg |2025/06/30 |true  |04-4.jpg |1083 |[null] |0   |35698 |
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+
+12:21:58.833 [main] INFO  GhostFileCleanupJob - ======== attachs =========
+12:21:58.834 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:21:58.846 [main] INFO  GhostFileCleanupJob - ======== thumbs =========
+12:21:58.847 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:21:58.847 [main] INFO  GhostFileCleanupJob - ======== attachs+thumbs =========
+12:21:58.849 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:21:58.849 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:21:58.849 [main] INFO  GhostFileCleanupJob - ======== dbListFiles =========
+12:21:58.850 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:21:58.850 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:21:58.850 [main] INFO  GhostFileCleanupJob - []
+12:22:24.650 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+12:22:25.329 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 7 msec}
+12:22:25.347 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+|uuid                                     |path       |image |origin   |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+|6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg |2025/06/30 |true  |04-4.jpg |1083 |[null] |0   |35698 |
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+
+12:22:25.356 [main] INFO  GhostFileCleanupJob - ======== attachs =========
+12:22:25.357 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:25.371 [main] INFO  GhostFileCleanupJob - ======== thumbs =========
+12:22:25.372 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:25.372 [main] INFO  GhostFileCleanupJob - ======== attachs+thumbs =========
+12:22:25.372 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:25.373 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:25.373 [main] INFO  GhostFileCleanupJob - ======== dbListFiles =========
+12:22:25.374 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:22:25.375 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:22:25.375 [main] INFO  GhostFileCleanupJob - 전부 지워부럿는데요 []
+12:22:35.288 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30, true
+12:22:36.236 [main] INFO  sqltiming - select * from tbl_attach ta where path = DATE_FORMAT(DATE_SUB(now(), INTERVAL 1 day), '%Y/%m/%d')
+ {executed in 22 msec}
+12:22:36.254 [main] INFO  resultsettable - 
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+|uuid                                     |path       |image |origin   |bno  |rno    |odr |size  |
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+|6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg |2025/06/30 |true  |04-4.jpg |1083 |[null] |0   |35698 |
+|-----------------------------------------|-----------|------|---------|-----|-------|----|------|
+
+12:22:36.261 [main] INFO  GhostFileCleanupJob - ======== attachs =========
+12:22:36.262 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:36.277 [main] INFO  GhostFileCleanupJob - ======== thumbs =========
+12:22:36.277 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:36.278 [main] INFO  GhostFileCleanupJob - ======== attachs+thumbs =========
+12:22:36.278 [main] INFO  GhostFileCleanupJob - Attach(uuid=6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:36.278 [main] INFO  GhostFileCleanupJob - Attach(uuid=t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, path=2025/06/30, image=true, origin=04-4.jpg, bno=1083, rno=null, odr=0, size=35698), 
+12:22:36.279 [main] INFO  GhostFileCleanupJob - ======== dbListFiles =========
+12:22:36.279 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:22:36.279 [main] INFO  GhostFileCleanupJob - d:\upload\files\2025\06\30\t_6fd16ab1-b6a7-486b-ba17-60baab2c60c6.jpg, 
+12:22:36.279 [main] INFO  GhostFileCleanupJob - 전부 지웟나요? []

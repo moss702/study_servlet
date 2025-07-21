@@ -1,0 +1,13 @@
+10:47:09.807 [main] INFO  ReplyMapperTest - Reply(rno=null, content=ㅇㅇ, id=sae0, regdate=null, bno=1024)
+10:47:09.855 [main] INFO  sqltiming - insert into tbl_reply (content, id, bno) values ('ㅇㅇ', 'sae0', 1024)
+ {executed in 8 msec}
+10:47:09.862 [main] INFO  sqltiming - select max(rno) from tbl_reply
+ {executed in 5 msec}
+10:47:09.875 [main] INFO  resultsettable - 
+|---------|
+|max(rno) |
+|---------|
+|140      |
+|---------|
+
+10:47:09.881 [main] INFO  ReplyMapperTest - Reply(rno=140, content=ㅇㅇ, id=sae0, regdate=null, bno=1024)

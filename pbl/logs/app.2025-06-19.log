@@ -1,0 +1,514 @@
+10:49:38.687 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 9 msec}
+10:49:38.708 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+10:50:23.314 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 9 msec}
+10:50:23.330 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+10:56:05.636 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 8 msec}
+10:56:05.655 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+10:57:18.634 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 6 msec}
+10:57:18.647 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:00:42.736 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2 
+		order by bno desc
+		limit 10 offset 20
+ {executed in 9 msec}
+11:00:42.770 [main] INFO  resultsettable - 
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|bno |title        |content                                                                                                                                                                         |id   |regdate             |moddate             |cnt |cno |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|919 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|918 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|917 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|913 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|912 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|908 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|907 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|906 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|905 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|904 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+
+11:00:42.779 [main] INFO  BoardMapperTest - Board(bno=919, title=testtesttest, content=<p>sdfsdfs</p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=918, title=글쓰기 테스트2, content=<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=917, title=글작성테스트, content=<p>글쓰기 글쓰기 글쓰기</p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=913, title=새똥이가 쓴 글 제목, content=내용, id=sae0, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=912, title=새똥이가 쓴 글 제목, content=내용, id=sae0, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=908, title=글작성테스트, content=<p>글쓰기 글쓰기 글쓰기</p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=907, title=글쓰기 테스트2, content=<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.790 [main] INFO  BoardMapperTest - Board(bno=906, title=testtesttest, content=<p>sdfsdfs</p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.791 [main] INFO  BoardMapperTest - Board(bno=905, title=testtesttest, content=<p>sdfsdfs</p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.791 [main] INFO  BoardMapperTest - Board(bno=904, title=글쓰기 테스트2, content=<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+, id=gae, regdate=2025-06-18 09:51:36, moddate=2025-06-18 09:51:36, cnt=0, cno=2)
+11:00:42.803 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 10 msec}
+11:00:42.804 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:08:54.475 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2 
+		order by bno desc
+		limit 10 offset 20
+ {executed in 12 msec}
+11:08:54.512 [main] INFO  resultsettable - 
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|bno |title        |content                                                                                                                                                                         |id   |regdate             |moddate             |cnt |cno |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|919 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|918 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|917 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|913 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|912 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|908 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|907 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|906 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|905 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|904 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+
+11:08:54.520 [main] INFO  BoardMapperTest - testtesttest
+11:08:54.523 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+11:08:54.523 [main] INFO  BoardMapperTest - 글작성테스트
+11:08:54.523 [main] INFO  BoardMapperTest - 새똥이가 쓴 글 제목
+11:08:54.523 [main] INFO  BoardMapperTest - 새똥이가 쓴 글 제목
+11:08:54.523 [main] INFO  BoardMapperTest - 글작성테스트
+11:08:54.523 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+11:08:54.524 [main] INFO  BoardMapperTest - testtesttest
+11:08:54.524 [main] INFO  BoardMapperTest - testtesttest
+11:08:54.524 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+11:08:54.533 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 7 msec}
+11:08:54.538 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:16:17.601 [main] INFO  BoardMapperTest - [T]
+11:16:17.677 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2
+
+				and (
+
+							title like concat('%', '점메추', '%')
+
+				) 
+		order by bno desc
+		limit 10 offset 0
+ {executed in 9 msec}
+11:16:17.692 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:17:40.949 [main] INFO  BoardMapperTest - [T]
+11:17:41.019 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2
+
+				and (
+
+							title like concat('%', '점메추', '%')
+
+				) 
+		order by bno desc
+		limit 10 offset 0
+ {executed in 8 msec}
+11:17:41.033 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:23:10.774 [main] INFO  BoardMapperTest - [T, C, I]
+11:23:10.870 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2
+
+				and (
+
+							title like concat('%', '점메추', '%')
+
+					or
+							title like concat('%', '점메추', '%')
+
+					or
+							title like concat('%', '점메추', '%')
+
+				) 
+		order by bno desc
+		limit 10 offset 0
+ {executed in 15 msec}
+11:23:10.883 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:31:02.021 [main] INFO  BoardMapperTest - [T, C, I]
+11:31:02.111 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2
+
+				and (
+
+							title like concat('%', '점메추', '%')
+
+					or
+							content like concat('%', '점메추', '%')
+
+					or
+							id like concat('%', '점메추', '%')
+
+				) 
+		order by bno desc
+		limit 10 offset 0
+ {executed in 9 msec}
+11:31:02.125 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:34:11.971 [main] INFO  BoardMapperTest - [T, I]
+11:34:12.046 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2
+
+				and (
+
+							title like concat('%', '점메추', '%')
+
+					or
+							id like concat('%', '점메추', '%')
+
+				) 
+		order by bno desc
+		limit 10 offset 0
+ {executed in 7 msec}
+11:34:12.058 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+11:34:12.102 [main] INFO  sqltiming - select * from tbl_board
+		 WHERE cno = 2 
+		order by bno desc
+		limit 10 offset 20
+ {executed in 8 msec}
+11:34:12.122 [main] INFO  resultsettable - 
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|bno |title        |content                                                                                                                                                                         |id   |regdate             |moddate             |cnt |cno |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|919 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|918 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|917 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|913 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|912 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|908 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|907 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|906 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|905 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|904 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+
+11:34:12.123 [main] INFO  BoardMapperTest - testtesttest
+11:34:12.126 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+11:34:12.127 [main] INFO  BoardMapperTest - 글작성테스트
+11:34:12.127 [main] INFO  BoardMapperTest - 새똥이가 쓴 글 제목
+11:34:12.127 [main] INFO  BoardMapperTest - 새똥이가 쓴 글 제목
+11:34:12.127 [main] INFO  BoardMapperTest - 글작성테스트
+11:34:12.127 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+11:34:12.127 [main] INFO  BoardMapperTest - testtesttest
+11:34:12.127 [main] INFO  BoardMapperTest - testtesttest
+11:34:12.127 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+11:34:12.135 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 5 msec}
+11:34:12.137 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+15:51:39.486 [main] INFO  BoardMapperTest - [T, I]
+15:51:39.566 [main] INFO  sqltiming - select * from tbl_board
+
+		 WHERE cno = 2
+
+					and (
+
+								title like concat('%', '점메추', '%')
+
+						or
+								id like concat('%', '점메추', '%')
+
+					) 
+
+			order by bno desc
+			limit 10 offset 0
+ {executed in 10 msec}
+15:51:39.583 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+15:51:39.652 [main] INFO  sqltiming - select * from tbl_board
+
+		 WHERE cno = 2 
+
+			order by bno desc
+			limit 10 offset 20
+ {executed in 6 msec}
+15:51:39.672 [main] INFO  resultsettable - 
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|bno |title        |content                                                                                                                                                                         |id   |regdate             |moddate             |cnt |cno |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+|932 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|931 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|927 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|926 |새똥이가 쓴 글 제목  |내용                                                                                                                                                                              |sae0 |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|922 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|921 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|920 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|919 |testtesttest |<p>sdfsdfs</p>
+                                                                                                                                                                |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|918 |글쓰기 테스트2     |<p>12345</p>
+
+<h3 style="color:#aaaaaa;font-style:italic;">냠냠냠냠</h3>
+
+<h2 style="font-style:italic;">쿨쿨쿨쿨</h2>
+
+<p><em>우아아아앙</em></p>
+
+<p><strong>삐용삐용뿅뿅</strong></p>
+ |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|917 |글작성테스트       |<p>글쓰기 글쓰기 글쓰기</p>
+                                                                                                                                                            |gae  |2025-06-18 09:51:36 |2025-06-18 09:51:36 |0   |2   |
+|----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------|--------------------|----|----|
+
+15:51:39.673 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+15:51:39.675 [main] INFO  BoardMapperTest - 글작성테스트
+15:51:39.675 [main] INFO  BoardMapperTest - 새똥이가 쓴 글 제목
+15:51:39.675 [main] INFO  BoardMapperTest - 새똥이가 쓴 글 제목
+15:51:39.675 [main] INFO  BoardMapperTest - 글작성테스트
+15:51:39.675 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+15:51:39.675 [main] INFO  BoardMapperTest - testtesttest
+15:51:39.676 [main] INFO  BoardMapperTest - testtesttest
+15:51:39.676 [main] INFO  BoardMapperTest - 글쓰기 테스트2
+15:51:39.676 [main] INFO  BoardMapperTest - 글작성테스트
+15:51:39.684 [main] INFO  sqltiming - select * from tbl_board where bno = 1
+ {executed in 6 msec}
+15:51:39.685 [main] INFO  resultsettable - 
+|----|------|--------|---|--------|--------|----|----|
+|bno |title |content |id |regdate |moddate |cnt |cno |
+|----|------|--------|---|--------|--------|----|----|
+|----|------|--------|---|--------|--------|----|----|
+
+15:51:39.696 [main] INFO  sqltiming - select * from tbl_board where bno = 1023
+ {executed in 7 msec}
+15:51:39.699 [main] INFO  resultsettable - 
+|-----|------|----------------|----|--------------------|--------------------|----|----|
+|bno  |title |content         |id  |regdate             |moddate             |cnt |cno |
+|-----|------|----------------|----|--------------------|--------------------|----|----|
+|1023 |aaaa  |<p>aaaaaa</p>
+ |gae |2025-06-19 13:01:33 |2025-06-19 13:01:33 |0   |2   |
+|-----|------|----------------|----|--------------------|--------------------|----|----|
+
+15:51:39.705 [main] INFO  sqltiming - update tbl_board set
+		title = ''제목 수정'',
+		content = ''<p>aaaaaa</p>
+'',
+		moddate = now(),
+		cno = 2
+		where bno = '1023'
+ {executed in 5 msec}
+15:52:03.133 [main] INFO  sqltiming - select * from tbl_board where bno = 1023
+ {executed in 7 msec}
+15:52:03.157 [main] INFO  resultsettable - 
+|-----|------|----------------|----|--------------------|--------------------|----|----|
+|bno  |title |content         |id  |regdate             |moddate             |cnt |cno |
+|-----|------|----------------|----|--------------------|--------------------|----|----|
+|1023 |aaaa  |<p>aaaaaa</p>
+ |gae |2025-06-19 13:01:33 |2025-06-19 13:01:33 |0   |2   |
+|-----|------|----------------|----|--------------------|--------------------|----|----|
+
+15:52:03.171 [main] INFO  sqltiming - update tbl_board set
+		title = ''제목 수정'',
+		content = ''<p>aaaaaa</p>
+'',
+		moddate = now(),
+		cno = 2
+		where bno = '1023'
+ {executed in 4 msec}
